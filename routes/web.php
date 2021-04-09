@@ -18,6 +18,7 @@ Route::get('/about', function () {
     ]);
 });
 
+// the name can be referenced other places
 Route::get('/articles',  'App\Http\Controllers\ArticlesController@index')->name('articles.index');
 Route::post('/articles', 'App\Http\Controllers\ArticlesController@store');
 Route::get('/articles/create', 'App\Http\Controllers\ArticlesController@create');
